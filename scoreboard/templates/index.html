@@ -1,0 +1,96 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Live Scoreboard</title>
+    <style>
+        .scoreboard {
+            font-size: 24px;
+        }
+        .last-updated {
+            font-size: 16px;
+            color: gray;
+        }
+    </style> -->
+    <!-- Load static files -->
+    <!-- {% load static %}
+    <script src="{% static 'js/jquery-3.7.1.min.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+</head>
+<body>
+    <div class="scoreboard">
+        Team A: <span id="teamA-score">#</span><br>
+        Team B: <span id="teamB-score">#</span>
+    </div>
+    <div class="last-updated" id="last-updated">Last updated: never</div>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="{% static './css/main.css' %}" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="{% static 'js/main.js' %}"></script>
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Irish Grover:wght@400&display=swap"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Itim:wght@400&display=swap"
+		/>
+		<title>Document</title>
+	</head>
+	<body>
+		<section id="top">
+			<div class="left">
+				<img src="{% static './images/festlogo.png' %}" alt="logo kalolsavam" />
+			</div>
+
+			<h1>Score board</h1>
+
+			<div class="right">
+				<img src="{% static './images/chsslogo.png' %}" alt="school logo" />
+			</div>
+		</section>
+		<section id="main">
+			<div style="background-color: #8c2323" id="Red">
+				<h2>Red House</h2>
+				<div class="scorebg" style="background-color: #fc5834">
+					<span class="score">###</span>
+				</div>
+			</div>
+			<div style="background-color: #b44b00" id="Orange">
+				<h2>Orange House</h2>
+				<div class="scorebg" style="background-color: #ff7a00">
+					<span class="score">###</span>
+				</div>
+			</div>
+			<div style="background-color: #c28c00" id="Yellow">
+				<h2>Yellow House</h2>
+				<div class="scorebg" style="background-color: #ffb800">
+					<span class="score">###</span>
+				</div>
+			</div>
+			<div style="background-color: #009a0f" id="Green">
+				<h2>Green House</h2>
+				<div class="scorebg" style="background-color: #74b85d">
+					<span class="score">###</span>
+				</div>
+			</div>
+			<div style="background-color: #090067" id="Blue">
+				<h2>Blue House</h2>
+				<div class="scorebg" style="background-color: #7763f4">
+					<span class="score">###</span>
+				</div>
+			</div>
+            <p style="font-size: large; display: none; color: #ffbfbf;" class="mobile_relod">Relod to update the score</p>
+			<p id="last-updated">never</p>
+		</section>
+	</body>
+</html>
+

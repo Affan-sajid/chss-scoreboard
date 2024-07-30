@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(110.03deg, #465bcc, #a03441 94.75%);
+}
+body section#top {
+  display: flex;
+  width: 100%;
+  height: 14%;
+  justify-content: space-between;
+  align-items: center;
+}
+body section#top div {
+  background: #fff;
+  width: 15vw;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body section#top div img {
+  padding: 0;
+  height: 90%;
+}
+body section#top div.left {
+  border-radius: 0px 0px 5vw 0px;
+}
+body section#top h1 {
+  color: #fff;
+  font-family: "Irish Grover";
+  font-size: 5vw;
+  display: block;
+  unicode-bidi: isolate;
+}
+body section#top div.right {
+  border-radius: 0px 0px 0px 5vw;
+}
+body section#main {
+  padding: 2.5vw;
+  height: 75%;
+  text-align: left;
+  color: #fff;
+  font-family: Itim;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+body section#main p {
+  font-size: 1vw;
+}
+body section#main div {
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  background: #7e7e7e;
+  margin-bottom: 0.5vw;
+}
+body section#main div h2 {
+  padding: 2vw 0px 2vw 10%;
+  margin: 0;
+  font-size: 3.1vw;
+}
+body section#main div div.scorebg {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  width: 25%;
+  height: 100%;
+  margin: 0;
+  border-radius: 100px 0px 0px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+  background-color: #fc5835;
+}
+body section#main div div.scorebg span.score {
+  font-size: 3vw;
+}
+
+@media screen and (max-width: 1150px) {
+  body section#top h1 {
+    font-size: 10vh;
+  }
+  body section#main div h2 {
+    font-size: 6vh;
+  }
+  body section#main div span.score {
+    font-size: 6vh !important;
+  }
+  body section#main p {
+    font-size: 2vh;
+  }
+}
+@media screen and (max-width: 640px) {
+  body section#top {
+    justify-content: center;
+  }
+  body section#top div {
+    display: none;
+  }
+  body section#main div h2 {
+    font-size: 5vh;
+  }
+  body section#main div span.score {
+    font-size: 5vh !important;
+  }
+  body section#main .mobile_relod {
+    display: block !important;
+  }
+}
+@media screen and (max-width: 450px) {
+  body section#top h1 {
+    font-size: 7vh;
+  }
+  body section#main div h2 {
+    font-size: 4vh;
+  }
+  body section#main div span.score {
+    font-size: 4vh !important;
+  }
+}/*# sourceMappingURL=main.css.map */
